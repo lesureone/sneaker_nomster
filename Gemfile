@@ -43,3 +43,9 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# bootstrap-sass
+gem 'bootstrap-sass', '~> 3.3.0'
+
+# autoprefixer-rails
+gem 'autoprefixer-rails'
