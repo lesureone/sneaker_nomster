@@ -44,8 +44,11 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-# bootstrap-sass
+# Use bootstrap-sass
 gem 'bootstrap-sass', '~> 3.3.0'
 
-# autoprefixer-rails
+# Use autoprefixer-rails
 gem 'autoprefixer-rails'
+
+# Use will_paginate
+gem 'kaminari'
