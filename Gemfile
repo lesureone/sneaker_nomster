@@ -47,6 +47,9 @@ end
 # Use bootstrap-sass
 gem 'bootstrap-sass', '~> 3.3.0'
 
+#Use Simple Form
+gem 'simple_form'
+
 # Use autoprefixer-rails
 gem 'autoprefixer-rails'
 
