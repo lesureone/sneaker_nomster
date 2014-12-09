@@ -50,6 +50,9 @@ gem 'bootstrap-sass', '~> 3.3.0'
 #Use Simple Form
 gem 'simple_form'
 
+# Use devise gem for user authentication
+gem 'devise', '>= 3.2.4'
+
 # Use autoprefixer-rails
 gem 'autoprefixer-rails'
 
