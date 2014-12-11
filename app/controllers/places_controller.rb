@@ -3,7 +3,6 @@ class PlacesController < ApplicationController
 	]
 	def index
 		@places = Place.all
-
 		@places = Place.order("name").page(params[:page]).per(5)
 	end
 
@@ -13,10 +12,10 @@ class PlacesController < ApplicationController
 
 	def create
     @place = current_user.places.create(place_params)
-    if @place.valid?
-		  redirect_to root_path
-    else
-      render :new, :status => :unprocessable_entity
+      if @place.valid?
+		    redirect_to root_path
+      else
+        render :new, :status => :unprocessable_entity
 	  end
   end
   
@@ -26,29 +25,29 @@ class PlacesController < ApplicationController
   
   def edit
     @place = Place.find(params[:id])
-    if @place.user != current_user
+      if @place.user != current_user
       return render :text => "Not allowed", :status => :forbidden
     end
   end
   
   def update
     @place = Place.find(params[:id])
-    if @place.user != current_user
+      if @place.user != current_user
       return render :text => "Not Allowed", :status => :forbidden
     end
     @place.update_attributes(place_params)
-    if @place.valid?
-      redirect_to root_path
-    else
-      render :edit, :status => :unprocessable_entity
-    end
+      if @place.valid?
+        redirect_to root_path
+      else
+        render :edit, :status => :unprocessable_entity
+      end
   end
   
   def destroy
     @place = Place.find(params[:id])
-    if @place.user != current_user
-      return render :text => "Not Allowed", :status => :forbidden
-    end
+      if @place.user != current_user
+        return render :text => "Not Allowed", :status => :forbidden
+      end
     @place.destroy
     redirect_to root_path
   end
