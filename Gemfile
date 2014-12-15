@@ -58,3 +58,9 @@ gem 'autoprefixer-rails'
 
 # Use will_paginate
 gem 'kaminari'
+
+# Use geocoder
+gem 'geocoder'
+
+# Use figaro
+gem "figaro", ">= 1.0.0"
