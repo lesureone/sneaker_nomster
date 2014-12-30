@@ -68,3 +68,6 @@ gem 'geocoder'
 # Use figaro
 gem "figaro", ">= 1.0.0"
 
+# Use fog
+gem "fog", "~> 1.3.1"
+
