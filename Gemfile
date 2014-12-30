@@ -9,6 +9,9 @@ gem 'pg'
 # Use CarrierWave
 gem 'carrierwave'
 
+# Use psych
+gem 'psych', '~> 2.0.8'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -70,4 +73,6 @@ gem "figaro", ">= 1.0.0"
 
 # Use fog
 gem "fog", "~> 1.3.1"
+
+
 
