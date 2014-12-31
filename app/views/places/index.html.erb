@@ -7,6 +7,14 @@
     <small><%= place.user.email %></small>
     <% end %>
 		
+		<!--Output photos on the index-->
+		<div class="col-xs-12 pull-left">
+				<% if place.photos.last.present? %> 
+				<%= image_tag place.photos.last.picture %>
+				<% end %>
+		</div>
+		
+		<!--Output comments on the index-->
 		<% if place.comments.present? %>
 		<div class="col-xs-12">
       <blockquote>
