@@ -9,7 +9,7 @@ SneakerNomster::Application.configure do
    # enable_starttls_auto: true,
    # user_name: ENV['GMAIL_ADDRESS'],
    # password: ENV['GMAIL_PASSWORD']
-  }
+  #}
 	
   # config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   # Settings specified here will take precedence over those in config/application.rb.
