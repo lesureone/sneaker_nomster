@@ -11,8 +11,11 @@
 		</div>
 		<div class="clear"></div>
 </div>
+	<br /><br />
 	<h1 class="text-center">My Comments</h1>
-	<%= @user.comments.each do |comment|%>
+	<br /><br />
+	<% @user.comments.each do |comment|%>
+	
 	<div class="col-xs-12 col-xs-6">
 		<h2 class="text-center"><%= link_to comment.place.name, place_path(comment.place) %></h2>
 		<blockquote>
